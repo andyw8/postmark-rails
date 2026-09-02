@@ -32,6 +32,10 @@ jobs:
           # - { rails_version: '~> 6.0', ruby_version: '2.6' }
           # - { rails_version: '~> 6.0', ruby_version: '2.7' }
           - { rails_version: '~> 7.0', ruby_version: '2.7' }
+          - { rails_version: '~> 7.1', ruby_version: '3.2' }
+          - { rails_version: '~> 7.2', ruby_version: '3.3' }
+          - { rails_version: '~> 8.0', ruby_version: '3.4' }
+          - { rails_version: '~> 8.1', ruby_version: '4.0' }
     env:
       RAILS_TEST_VERSION: ${{ matrix.rails_version }}
       MIME_TYPES_TEST_VERSION: ${{ matrix.mime_types_version || '~> 3.1' }}
