@@ -1,0 +1,43 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: Rails ${{ matrix.rails_version }} / Ruby ${{ matrix.ruby_version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { rails_version: '~> 3.0', ruby_version: '2.5', mime_types_version: '1.25.1' }
+          - { rails_version: '~> 3.2', ruby_version: '2.5', mime_types_version: '1.25.1' }
+          - { rails_version: '~> 4.0', ruby_version: '2.5' }
+          - { rails_version: '~> 4.1', ruby_version: '2.5' }
+          - { rails_version: '~> 4.2', ruby_version: '2.5' }
+          - { rails_version: '~> 5.0', ruby_version: '2.5' }
+          - { rails_version: '~> 5.0', ruby_version: '2.6' }
+          - { rails_version: '~> 5.0', ruby_version: '2.7' }
+          - { rails_version: '~> 5.1', ruby_version: '2.5' }
+          - { rails_version: '~> 5.1', ruby_version: '2.6' }
+          - { rails_version: '~> 5.1', ruby_version: '2.7' }
+          - { rails_version: '~> 5.2', ruby_version: '2.5' }
+          - { rails_version: '~> 5.2', ruby_version: '2.6' }
+          - { rails_version: '~> 5.2', ruby_version: '2.7' }
+          - { rails_version: '~> 6.0', ruby_version: '2.5' }
+          - { rails_version: '~> 6.0', ruby_version: '2.6' }
+          - { rails_version: '~> 6.0', ruby_version: '2.7' }
+          - { rails_version: '~> 7.0', ruby_version: '2.7' }
+    env:
+      RAILS_TEST_VERSION: ${{ matrix.rails_version }}
+      MIME_TYPES_TEST_VERSION: ${{ matrix.mime_types_version || '~> 3.1' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby_version }}
+          bundler: '2.2.3'
+          bundler-cache: true
+      - run: bundle exec rake spec

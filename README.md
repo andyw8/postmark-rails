@@ -4,7 +4,7 @@
 
 # Postmark Rails Gem
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ActiveCampaign/postmark-rails/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ActiveCampaign/postmark-rails/tree/main)
+[![Tests](https://github.com/ActiveCampaign/postmark-rails/actions/workflows/tests.yml/badge.svg)](https://github.com/ActiveCampaign/postmark-rails/actions/workflows/tests.yml)
 [![Code Climate](https://codeclimate.com/github/ActiveCampaign/postmark-rails/badges/gpa.svg)](https://codeclimate.com/github/ActiveCampaign/postmark-rails)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://www.opensource.org/licenses/MIT)
 [![Gem Version](https://badge.fury.io/rb/postmark-rails.svg)](https://badge.fury.io/rb/postmark-rails)
