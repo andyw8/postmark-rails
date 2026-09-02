@@ -4,12 +4,7 @@
 
 # Postmark Rails Gem
 
-This fork exists to address the issues described in [ActiveCampaign/postmark-rails#106](https://github.com/ActiveCampaign/postmark-rails/issues/106).
-
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ActiveCampaign/postmark-rails/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ActiveCampaign/postmark-rails/tree/main)
-[![Code Climate](https://codeclimate.com/github/ActiveCampaign/postmark-rails/badges/gpa.svg)](https://codeclimate.com/github/ActiveCampaign/postmark-rails)
-[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://www.opensource.org/licenses/MIT)
-[![Gem Version](https://badge.fury.io/rb/postmark-rails.svg)](https://badge.fury.io/rb/postmark-rails)
+## This fork exists to address the issues described in [ActiveCampaign/postmark-rails#106](https://github.com/ActiveCampaign/postmark-rails/issues/106)
 
 [Postmark](https://postmarkapp.com) allows you to send your emails with high delivery rates.
 It also includes detailed statistics. In addition, Postmark can parse incoming emails which are forwarded back to your application.
