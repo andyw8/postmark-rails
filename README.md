@@ -4,6 +4,8 @@
 
 # Postmark Rails Gem
 
+This fork exists to address the issues described in [ActiveCampaign/postmark-rails#106](https://github.com/ActiveCampaign/postmark-rails/issues/106).
+
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/ActiveCampaign/postmark-rails/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ActiveCampaign/postmark-rails/tree/main)
 [![Code Climate](https://codeclimate.com/github/ActiveCampaign/postmark-rails/badges/gpa.svg)](https://codeclimate.com/github/ActiveCampaign/postmark-rails)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://www.opensource.org/licenses/MIT)
