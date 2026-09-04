@@ -26,11 +26,9 @@ jobs:
           - { rails_version: '~> 5.2', ruby_version: '2.5' }
           - { rails_version: '~> 5.2', ruby_version: '2.6' }
           - { rails_version: '~> 5.2', ruby_version: '2.7' }
-          # Rails 6 fails with error:
-          # uninitialized constant ActiveSupport::LoggerThreadSafeLevel::Logger
-          # - { rails_version: '~> 6.0', ruby_version: '2.5' }
-          # - { rails_version: '~> 6.0', ruby_version: '2.6' }
-          # - { rails_version: '~> 6.0', ruby_version: '2.7' }
+          - { rails_version: '~> 6.0', ruby_version: '2.5' }
+          - { rails_version: '~> 6.0', ruby_version: '2.6' }
+          - { rails_version: '~> 6.0', ruby_version: '2.7' }
           - { rails_version: '~> 7.0', ruby_version: '2.7' }
           - { rails_version: '~> 7.1', ruby_version: '3.2' }
           - { rails_version: '~> 7.2', ruby_version: '3.3' }

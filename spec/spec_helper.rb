@@ -3,6 +3,11 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 
 require 'rubygems'
 require 'postmark'
+
+# Without this, Rails 6 tests fail with error:
+# uninitialized constant ActiveSupport::LoggerThreadSafeLevel::Logger
+require 'logger'
+
 require 'postmark-rails'
 require 'json'
 
