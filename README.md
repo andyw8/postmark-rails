@@ -26,9 +26,11 @@ Also you will need a [postmark gem](https://github.com/ActiveCampaign/postmark-g
 
 ### Supported Rails Versions
 
-- Rails 7.0
-- Rails 6.0
-- Rails 5.0
+- Rails 8.1
+- Rails 8.0
+- Rails 7.x
+- Rails 6.x
+- Rails 5.x
 - Rails 4.x
 - Rails 3.x
 
@@ -43,7 +45,7 @@ Add `postmark-rails` to your Gemfile and run `bundle install`.
 gem 'postmark-rails'
 ```
 
-## Rails 6-7
+## Rails 6-8
 
 Save your Postmark Server API Token to [config/credentials.yml.enc](https://guides.rubyonrails.org/security.html#custom-credentials):
 
