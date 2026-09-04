@@ -20,7 +20,7 @@ For details about Postmark API in general, please check out [Postmark developer 
 ## Requirements
 
 You will need a Postmark account, server and sender signature (or verified domain) set up to use it.
-For details about setup, check out [wiki pages](https://github.com/ActiveCampaign/postmark-rails/wiki/Getting-Started).
+For details about setup, check out [wiki pages](https://github.com/andyw8/postmark-rails/wiki/Getting-Started).
 
 Also you will need a [postmark gem](https://github.com/ActiveCampaign/postmark-gem) version 1.0 and higher is required.
 
@@ -34,15 +34,15 @@ Also you will need a [postmark gem](https://github.com/ActiveCampaign/postmark-g
 - Rails 4.x
 - Rails 3.x
 
-For Rails 2.3 please take a look at [version 0.4](https://github.com/ActiveCampaign/postmark-rails/tree/v0.4.2).
+For Rails 2.3 please take a look at [version 0.4](https://github.com/andyw8/postmark-rails/tree/v0.4.2).
 It may miss some new features, but receives all required bug fixes and other support if needed.
 
 ## Installation
 
-Add `postmark-rails` to your Gemfile and run `bundle install`.
+Add `postmark-rails-andyw8` to your Gemfile and run `bundle install`.
 
 ```ruby
-gem 'postmark-rails'
+gem 'postmark-rails-andyw8'
 ```
 
 ## Rails 6-8
